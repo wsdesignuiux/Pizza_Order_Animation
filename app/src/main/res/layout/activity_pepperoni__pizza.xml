@@ -1,0 +1,1055 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#fafdff"
+    android:clipToPadding="false"
+    android:orientation="vertical"
+    android:paddingBottom="20.71dp"
+    tools:context=".PepperoniPizza">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <!--<android.support.v7.widget.CardView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--app:cardElevation="10dp"-->
+        <!--android:layout_gravity="center"-->
+        <!--app:cardCornerRadius="170dp"-->
+        <!--&gt;-->
+
+        <include layout="@layout/toolbar" />
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clipToPadding="false"
+                android:orientation="vertical"
+                android:paddingBottom="150dp">
+
+                <FrameLayout
+                    android:id="@+id/framelayout"
+                    android:layout_width="550dp"
+                    android:layout_height="250dp"
+                    android:layout_gravity="center">
+
+
+                    <!--
+                            <LinearLayout
+                                android:id="@+id/large_pizza_shadow_circle"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:background="@drawable/shadow_circle"
+                                android:orientation="vertical">
+
+
+                                <ImageView
+                                    android:id="@+id/large_pizza"
+                                    android:layout_width="235dp"
+                                    android:layout_height="235dp"
+                                    android:layout_gravity="center"
+                                    android:scaleType="fitXY"
+                                    android:src="@drawable/img1" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/medium_pizza_shadow_circle"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:background="@drawable/shadow_circle"
+                                android:orientation="vertical"/>
+
+
+                            <ImageView
+                                android:id="@+id/medium_pizza"
+                                android:layout_width="182dp"
+                                android:layout_height="182dp"
+                                android:layout_gravity="center"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/img2" />
+                            </LinearLayout>-->
+
+
+                    <!--<LinearLayout-->
+                    <!--android:id="@+id/small_pizza_shadow_circle"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_gravity="center"-->
+                    <!--android:gravity="center"-->
+                    <!--android:background="@drawable/shadow_circle"-->
+                    <!--android:orientation="vertical">-->
+
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="70.7dp"
+                            android:orientation="vertical">
+
+
+                            <LinearLayout
+                                android:layout_width="11dp"
+                                android:layout_height="1dp"
+                                android:layout_marginLeft="15dp"
+                                android:background="@drawable/dashed_line_grey"
+                                android:layerType="software"
+                                android:orientation="vertical" />
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+
+                                <FrameLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+                                    <FrameLayout
+                                        android:id="@+id/small_pizza_framelayout"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:visibility="invisible">
+
+
+                                        <LinearLayout
+                                            android:layout_width="1dp"
+                                            android:layout_height="137dp"
+                                            android:layout_gravity="center"
+                                            android:background="@drawable/dashed_rect_grey"
+                                            android:layerType="software"
+                                            android:orientation="vertical">
+
+
+                                        </LinearLayout>
+
+                                        <android.support.v7.widget.CardView
+                                            android:layout_width="30dp"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginTop="50dp"
+                                            app:cardCornerRadius="6dp">
+
+                                            <LinearLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:gravity="center"
+                                                android:orientation="vertical"
+                                                android:paddingTop="4dp"
+                                                android:paddingBottom="4dp">
+
+                                                <TextView
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_gravity="center"
+                                                    android:text="7”"
+                                                    android:textColor="#a6a8bc"
+                                                    android:textSize="10sp" />
+
+                                                <TextView
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_marginTop="0.7sp"
+                                                    android:text="S"
+                                                    android:textColor="#a6a8bc"
+                                                    android:textSize="10sp" />
+
+
+                                            </LinearLayout>
+                                        </android.support.v7.widget.CardView>
+
+
+                                    </FrameLayout>
+
+                                    <FrameLayout
+                                        android:id="@+id/medium_pizza_framelayout"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:visibility="invisible">
+
+
+                                        <LinearLayout
+                                            android:layout_width="1dp"
+                                            android:layout_height="180dp"
+                                            android:layout_gravity="center"
+                                            android:background="@drawable/dashed_rect_grey"
+                                            android:layerType="software"
+                                            android:orientation="vertical">
+
+
+                                        </LinearLayout>
+
+                                        <android.support.v7.widget.CardView
+                                            android:layout_width="30dp"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginTop="70.48dp"
+                                            app:cardCornerRadius="6dp">
+
+                                            <LinearLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:gravity="center"
+                                                android:orientation="vertical"
+                                                android:paddingTop="4dp"
+                                                android:paddingBottom="4dp">
+
+                                                <TextView
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_gravity="center"
+                                                    android:text="10”"
+                                                    android:textColor="#a6a8bc"
+                                                    android:textSize="10sp" />
+
+                                                <TextView
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_marginTop="0.7sp"
+                                                    android:text="M"
+                                                    android:textColor="#a6a8bc"
+                                                    android:textSize="10sp" />
+
+
+                                            </LinearLayout>
+                                        </android.support.v7.widget.CardView>
+
+
+                                    </FrameLayout>
+
+                                    <FrameLayout
+                                        android:id="@+id/large_pizza_framelayout"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:visibility="invisible">
+
+
+                                        <LinearLayout
+                                            android:layout_width="1dp"
+                                            android:layout_height="210dp"
+                                            android:layout_gravity="center"
+                                            android:background="@drawable/dashed_rect_grey"
+                                            android:layerType="software"
+                                            android:orientation="vertical">
+
+
+                                        </LinearLayout>
+
+                                        <android.support.v7.widget.CardView
+                                            android:layout_width="30dp"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginTop="85dp"
+                                            app:cardCornerRadius="6dp">
+
+                                            <LinearLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:gravity="center"
+                                                android:orientation="vertical"
+                                                android:paddingTop="4dp"
+                                                android:paddingBottom="4dp">
+
+                                                <TextView
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_gravity="center"
+                                                    android:text="15”"
+                                                    android:textColor="#a6a8bc"
+                                                    android:textSize="10sp" />
+
+                                                <TextView
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_marginTop="0.7sp"
+                                                    android:text="L"
+                                                    android:textColor="#a6a8bc"
+                                                    android:textSize="10sp" />
+
+
+                                            </LinearLayout>
+                                        </android.support.v7.widget.CardView>
+
+
+                                    </FrameLayout>
+                                </FrameLayout>
+
+
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:layout_width="11dp"
+                                android:layout_height="1dp"
+                                android:layout_marginLeft="15dp"
+                                android:background="@drawable/dashed_line_grey"
+                                android:layerType="software"
+                                android:orientation="vertical" />
+
+                        </LinearLayout>
+
+                    </FrameLayout>
+
+                    <!--<LinearLayout-->
+                    <!--android:id="@+id/shadow_circle_linear"-->
+                    <!--android:layout_width="235dp"-->
+                    <!--android:layout_height="235dp"-->
+                    <!--android:layout_gravity="center"-->
+                    <!--android:layout_marginBottom="15dp"-->
+                    <!--android:background="@drawable/shadow_circle"-->
+                    <!--android:elevation="5dp"-->
+                    <!--android:orientation="vertical">-->
+
+                    <FrameLayout
+                        android:layout_width="245dp"
+                        android:layout_height="250dp"
+                        android:layout_gravity="center">
+
+
+                        <FrameLayout
+                            android:id="@+id/large_shadow_framelayout"
+                            android:layout_width="220dp"
+                            android:layout_height="220dp"
+                            android:layout_gravity="center"
+                            android:background="@drawable/shadow_circle"
+                            android:elevation="10dp">
+
+                            <FrameLayout
+                                android:id="@+id/small_shadow_framelayout"
+                                android:layout_width="150dp"
+                                android:layout_height="150dp"
+                                android:layout_gravity="center"
+                                android:background="@drawable/shadow_circle"
+                                android:elevation="10dp" />
+
+                            <ImageView
+                                android:id="@+id/small_pizza"
+                                style="@style/MaterialAnimations.Icon.Big"
+                                android:layout_width="235dp"
+                                android:layout_height="235dp"
+                                android:layout_gravity="center"
+                                android:elevation="10dp"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/img2"
+                                android:transitionName="@string/blue_name" />
+
+                        </FrameLayout>
+
+                    </FrameLayout>
+
+
+                    <!--</LinearLayout>-->
+
+                    <!--<LinearLayout-->
+                    <!--android:id="@+id/medium_linear"-->
+                    <!--android:visibility="invisible"-->
+                    <!--android:layout_width="180dp"-->
+                    <!--android:layout_height="180dp"-->
+                    <!--android:layout_gravity="center"-->
+                    <!--android:layout_marginBottom="15dp"-->
+                    <!--android:elevation="5dp"-->
+                    <!--android:background="@drawable/shadow_circle"-->
+                    <!--android:orientation="vertical"/>-->
+
+                    <!--<LinearLayout-->
+                    <!--android:id="@+id/small_linear"-->
+                    <!--android:visibility="invisible"-->
+                    <!--android:layout_width="137.89dp"-->
+                    <!--android:layout_height="137.89dp"-->
+                    <!--android:layout_gravity="center"-->
+                    <!--android:layout_marginBottom="15dp"-->
+                    <!--android:elevation="5dp"-->
+                    <!--android:background="@drawable/shadow_circle"-->
+                    <!--android:orientation="vertical">-->
+
+
+                    <!--</LinearLayout>-->
+
+                    <ImageView
+                        android:id="@+id/paneer_topping"
+                        android:layout_width="500dp"
+                        android:layout_height="250dp"
+                        android:layout_gravity="center"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/paneer_topping"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:id="@+id/onion_topping"
+                        android:layout_width="500dp"
+                        android:layout_height="250dp"
+                        android:layout_gravity="center"
+                        android:rotation="90"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/onion_topping"
+                        android:visibility="gone" />
+
+
+                    <ImageView
+                        android:id="@+id/redpaprika_topping"
+                        android:layout_width="500dp"
+                        android:layout_height="250dp"
+                        android:layout_gravity="center"
+                        android:rotation="180"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/red_paprika_topping"
+                        android:visibility="gone" />
+
+
+                    <!--</LinearLayout>-->
+
+
+                    <!--</LinearLayout>-->
+                    <!--<LinearLayout-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_gravity="center"-->
+                    <!--android:elevation="20dp"-->
+                    <!--android:background="@drawable/white_rect"-->
+                    <!--android:orientation="vertical">-->
+
+
+                    <!--<ImageView-->
+                    <!--android:layout_width="182dp"-->
+                    <!--android:layout_height="182dp"-->
+                    <!--android:scaleType="fitXY"-->
+                    <!--android:visibility="invisible"-->
+                    <!--android:src="@drawable/img3" />-->
+
+
+                    <!--</LinearLayout>-->
+
+                    <!--<LinearLayout-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_gravity="center"-->
+                    <!--android:elevation="20dp"-->
+                    <!--android:orientation="vertical">-->
+
+
+                    <!--<ImageView-->
+                    <!--android:layout_width="135dp"-->
+                    <!--android:layout_height="135dp"-->
+                    <!--android:scaleType="fitXY"-->
+                    <!--android:src="@drawable/img2" />-->
+
+
+                    <!--</LinearLayout>-->
+                    <!---->
+
+
+                </FrameLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5.4dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+
+                    <LinearLayout
+                        android:id="@+id/linear_small_pizza"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginBottom="8dp"
+                        android:background="@drawable/grey_rect"
+                        android:elevation="8dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/small_pizza_text_size"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="9.3dp"
+                            android:fontFamily="@font/sf_pro_display_regular"
+                            android:text="S"
+                            android:textColor="#a6a8bc"
+                            android:textSize="16.7sp" />
+
+                        <TextView
+                            android:id="@+id/small_pizza_text_price"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="1.3dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_marginBottom="9.3dp"
+                            android:fontFamily="@font/sf_pro_display_light"
+                            android:text="$15"
+                            android:textColor="#a6a8bc"
+                            android:textSize="11.7sp" />
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/linear_medium_pizza"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginBottom="8dp"
+                        android:background="@drawable/grey_rect"
+                        android:elevation="8dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/medium_pizza_text_size"
+                            android:layout_width="wrap_content"
+
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="9.3dp"
+                            android:fontFamily="@font/sf_pro_display_regular"
+                            android:text="M"
+                            android:textColor="#a6a8bc"
+                            android:textSize="16.7sp" />
+
+                        <TextView
+                            android:id="@+id/medium_pizza_text_price"
+                            android:layout_width="wrap_content"
+
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="1.3dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_marginBottom="9.3dp"
+                            android:fontFamily="@font/sf_pro_display_light"
+                            android:text="$25"
+                            android:textColor="#a6a8bc"
+                            android:textSize="11.7sp" />
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/linear_large_pizza"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginRight="4dp"
+                        android:layout_marginBottom="8dp"
+                        android:background="@drawable/grey_rect"
+                        android:elevation="8dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/large_pizza_text_size"
+                            android:layout_width="wrap_content"
+
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="9.3dp"
+                            android:fontFamily="@font/sf_pro_display_regular"
+                            android:text="L"
+                            android:textColor="#a6a8bc"
+                            android:textSize="16.7sp" />
+
+                        <TextView
+                            android:id="@+id/large_pizza_text_price"
+                            android:layout_width="wrap_content"
+
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="1.3dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_marginBottom="9.3dp"
+                            android:fontFamily="@font/sf_pro_display_light"
+                            android:text="$35"
+                            android:textColor="#a6a8bc"
+                            android:textSize="11.7sp" />
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+                <!--</android.support.v7.widget.CardView>-->
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="13.51dp"
+                    android:fontFamily="@font/sf_pro_display_bold"
+                    android:text="Crust:"
+                    android:textColor="#272a33"
+                    android:textSize="15sp" />
+
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clipToPadding="false"
+                    android:scrollbars="none">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="13dp"
+                        android:orientation="horizontal">
+
+                        <android.support.v7.widget.CardView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="7.5dp"
+                            app:cardElevation="5dp">
+
+                            <FrameLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:layout_width="15dp"
+                                    android:layout_height="15dp"
+                                    android:layout_gravity="right"
+                                    android:layout_marginTop="3.5dp"
+                                    android:scaleType="fitXY"
+                                    android:src="@drawable/ic_selected" />
+
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="13.3sp"
+                                    android:fontFamily="@font/sf_pro_display_regular"
+                                    android:text="Hand Tossed"
+                                    android:textColor="#272a33"
+                                    android:textSize="13.3sp" />
+
+                            </FrameLayout>
+                        </android.support.v7.widget.CardView>
+
+                        <android.support.v7.widget.CardView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="7.5dp"
+                            app:cardElevation="5dp">
+
+                            <FrameLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:layout_width="15dp"
+                                    android:layout_height="15dp"
+                                    android:layout_gravity="right"
+                                    android:layout_marginTop="3.5dp"
+                                    android:scaleType="fitXY"
+                                    android:src="@drawable/ic_selected"
+                                    android:visibility="invisible" />
+
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="13.3dp"
+                                    android:fontFamily="@font/sf_pro_display_regular"
+                                    android:text="Cheese Burst"
+                                    android:textColor="#272a33"
+                                    android:textSize="13.3sp" />
+
+                            </FrameLayout>
+                        </android.support.v7.widget.CardView>
+
+                        <android.support.v7.widget.CardView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="7.5dp"
+                            app:cardElevation="5dp">
+
+                            <FrameLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:layout_width="15dp"
+                                    android:layout_height="15dp"
+                                    android:layout_gravity="right"
+                                    android:layout_marginTop="3.5dp"
+                                    android:scaleType="fitXY"
+                                    android:src="@drawable/ic_selected"
+                                    android:visibility="invisible" />
+
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="13.3dp"
+                                    android:fontFamily="@font/sf_pro_display_regular"
+                                    android:text="Fresh Pan Pizza"
+                                    android:textColor="#272a33"
+                                    android:textSize="13.3sp" />
+
+                            </FrameLayout>
+                        </android.support.v7.widget.CardView>
+
+                        <android.support.v7.widget.CardView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="7.5dp"
+                            app:cardElevation="5dp">
+
+                            <FrameLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:layout_width="15dp"
+                                    android:layout_height="15dp"
+                                    android:layout_gravity="right"
+                                    android:layout_marginTop="3.5dp"
+                                    android:scaleType="fitXY"
+                                    android:src="@drawable/ic_selected"
+                                    android:visibility="invisible" />
+
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="13.3dp"
+                                    android:fontFamily="@font/sf_pro_display_regular"
+                                    android:text="Sicilian Style"
+                                    android:textColor="#272a33"
+                                    android:textSize="13.3sp" />
+
+                            </FrameLayout>
+                        </android.support.v7.widget.CardView>
+
+
+                    </LinearLayout>
+
+                </HorizontalScrollView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/sf_pro_display_bold"
+                        android:text="Add Toppings:"
+                        android:textColor="#272a33"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:fontFamily="@font/roboto_light"
+                        android:text="@ $2 Each"
+                        android:textColor="#272a33"
+                        android:textSize="11.7sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="13dp"
+                    android:clipToPadding="false"
+
+                    android:scrollbars="none">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <android.support.v7.widget.CardView
+                            android:layout_width="110dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_margin="7.5dp"
+                            app:cardElevation="5dp">
+
+                            <LinearLayout
+                                android:id="@+id/paneer_cardview"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:id="@+id/paneer_selected"
+                                    android:layout_width="15dp"
+                                    android:layout_height="15dp"
+                                    android:layout_gravity="right"
+                                    android:layout_marginTop="3.5dp"
+                                    android:scaleType="fitXY"
+                                    android:src="@drawable/ic_selected"
+                                    android:visibility="invisible" />
+
+
+                                <ImageView
+                                    android:layout_width="45dp"
+                                    android:layout_height="45dp"
+                                    android:layout_gravity="center"
+                                    android:layout_margin="9.7dp"
+                                    android:scaleType="fitXY"
+                                    android:src="@drawable/paneer" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="12dp"
+                                    android:fontFamily="@font/sf_pro_display_regular"
+                                    android:gravity="center"
+                                    android:text="Paneer"
+                                    android:textColor="#272a33"
+                                    android:textSize="13.3sp" />
+                            </LinearLayout>
+                        </android.support.v7.widget.CardView>
+
+                        <android.support.v7.widget.CardView
+                            android:layout_width="110dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_margin="7.5dp"
+                            app:cardElevation="5dp">
+
+
+                            <LinearLayout
+                                android:id="@+id/onion_cardview"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:id="@+id/onion_selected"
+                                    android:layout_width="15dp"
+                                    android:layout_height="15dp"
+                                    android:layout_gravity="right"
+                                    android:layout_marginTop="3.5dp"
+                                    android:scaleType="fitXY"
+                                    android:src="@drawable/ic_selected"
+                                    android:visibility="invisible" />
+
+
+                                <ImageView
+                                    android:layout_width="65dp"
+                                    android:layout_height="48dp"
+                                    android:layout_gravity="center"
+                                    android:layout_margin="7.7dp"
+                                    android:scaleType="fitXY"
+                                    android:src="@drawable/onion" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="12dp"
+                                    android:fontFamily="@font/sf_pro_display_regular"
+                                    android:gravity="center"
+                                    android:text="Onion"
+                                    android:textColor="#272a33"
+                                    android:textSize="13.3sp" />
+                            </LinearLayout>
+                        </android.support.v7.widget.CardView>
+
+                        <android.support.v7.widget.CardView
+                            android:layout_width="110dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_margin="7.5dp"
+                            app:cardElevation="5dp">
+
+
+                            <LinearLayout
+                                android:id="@+id/redpaprika_cardview"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+
+                                <ImageView
+                                    android:id="@+id/redpaprika_selected"
+                                    android:layout_width="15dp"
+                                    android:layout_height="15dp"
+                                    android:layout_gravity="right"
+                                    android:layout_marginTop="3.5dp"
+                                    android:scaleType="fitXY"
+                                    android:src="@drawable/ic_selected"
+                                    android:visibility="invisible" />
+
+
+                                <ImageView
+                                    android:layout_width="56dp"
+                                    android:layout_height="56dp"
+                                    android:layout_gravity="center"
+                                    android:layout_margin="3.5dp"
+                                    android:scaleType="fitXY"
+                                    android:src="@drawable/red_paprika" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="12dp"
+                                    android:fontFamily="@font/sf_pro_display_regular"
+                                    android:gravity="center"
+                                    android:text="Red Paprika"
+                                    android:textColor="#272a33"
+                                    android:textSize="13.3sp" />
+                            </LinearLayout>
+                        </android.support.v7.widget.CardView>
+
+                        <android.support.v7.widget.CardView
+                            android:layout_width="110dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_margin="7.5dp"
+                            app:cardElevation="5dp">
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:layout_width="15dp"
+                                    android:layout_height="15dp"
+                                    android:layout_gravity="right"
+                                    android:layout_marginTop="3.5dp"
+                                    android:scaleType="fitXY"
+                                    android:src="@drawable/ic_selected"
+                                    android:visibility="invisible" />
+
+
+                                <ImageView
+                                    android:layout_width="56dp"
+                                    android:layout_height="56dp"
+                                    android:layout_gravity="center"
+                                    android:layout_margin="3.5dp"
+                                    android:scaleType="fitXY"
+                                    android:src="@drawable/tomato" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="12dp"
+                                    android:fontFamily="@font/sf_pro_display_regular"
+                                    android:gravity="center"
+                                    android:text="Red Paprika"
+                                    android:textColor="#272a33"
+                                    android:textSize="13.3sp" />
+
+
+                            </LinearLayout>
+                        </android.support.v7.widget.CardView>
+
+
+                    </LinearLayout>
+                </HorizontalScrollView>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="19dp"
+        app:cardCornerRadius="30.3dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/decrement"
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="22.7dp"
+                android:padding="7dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_minus" />
+
+            <TextView
+                android:id="@+id/display_value_cart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="13.3dp"
+                android:layout_marginRight="13.3dp"
+                android:text="0"
+                android:textColor="#272a33"
+                android:textSize="18.3sp" />
+
+            <ImageView
+                android:id="@+id/increment"
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:layout_gravity="center"
+                android:padding="7dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_plus" />
+
+            <TextView
+                android:id="@+id/add_to_cart_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="13.3dp"
+                android:layout_marginRight="13.3dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/sf_pro_display_bold"
+                android:gravity="right"
+                android:text="Add to Cart"
+                android:textColor="#ff5400"
+                android:textSize="15sp" />
+
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+
+</RelativeLayout>

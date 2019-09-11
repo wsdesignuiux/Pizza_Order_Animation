@@ -1,0 +1,31 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+        // enable window content transition
+        <item name="android:windowContentTransitions">true</item>
+        <item name="android:windowSharedElementsUseOverlay">false</item>
+
+    </style>
+
+    <style name="MyMenuTextAppearance1" parent="TextAppearance.AppCompat.Widget.ActionBar.Title.Inverse">
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:fontFamily">@font/sf_pro_display_medium</item>
+        <item name="android:letterSpacing">0.0300</item>
+    </style>
+
+    <!--<style name="MaterialAnimations.TextAppearance.Title.Inverse" parent="android:TextAppearance.Material.Title">-->
+    <!--<item name="android:textColor">?android:textColorPrimaryInverse</item>-->
+    <!--</style>-->
+
+    <style name="MaterialAnimations.Icon.Big" parent="Theme.AppCompat.Light.NoActionBar">
+
+        <item name="android:windowContentTransitions">true</item>
+    </style>
+</resources>
